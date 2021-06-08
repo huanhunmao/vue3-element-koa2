@@ -18,6 +18,7 @@ export default {
   clearItem(key) {
     let storage = this.getStorage();
     delete storage[key];
+    window.localStorage.setItem(config.namespace, JSON.stringify(storage));
   },
   // 清除 所有
   clearAll() {

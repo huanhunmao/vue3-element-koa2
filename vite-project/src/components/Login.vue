@@ -2,18 +2,18 @@
 <div>
   <h1>login 启程</h1>
   <el-button @click="goHome">回首页</el-button>
-<welcome msg='fhj'/>
+<!-- <welcome msg='fhj'/> -->
 </div>
 </template>
 
 <script >
 
 import { useRouter } from 'vue-router'
-import Welcome from './Welcome.vue'
+// import Welcome from './Welcome.vue'
   export default {
     name : 'login',
     components : {
-      Welcome
+      // Welcome
     },
         methods: {
         goHome(){
